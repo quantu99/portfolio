@@ -57,21 +57,17 @@ const items = [
 ];
 const Single = ({ item }) => {
     const ref = useRef();
-    const { scrollYProgress } = useScroll({
-        target: ref,
-    });
-    const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
     return (
         <section id="Latest" className={cx('section')} key={item.id}>
             <div className={cx('itemContainer')}>
                 <motion.div className={cx('wrapper')}>
-                    <motion.div style={{ y: y }} className={cx('textContainer')}>
+                    <div className={cx('textContainer')}>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
                         <a href={item.link} target="__blank">
                             See demo
                         </a>
-                    </motion.div>
+                    </div>
                     <div ref={ref} className={cx('imageContainer')}>
                         <div className={cx('imageWrapper')}>
                             <div className={cx('cover')}>
