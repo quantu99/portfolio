@@ -1,0 +1,118 @@
+@import '../GlobalStyles/GlobalStyles.module.scss';
+
+.container {
+    height: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    @include mobile {
+        max-width: 400px;
+        flex-direction: column-reverse;
+        padding: 20px;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+.formContainer {
+    flex: 1;
+    position: relative;
+}
+.svgContainer {
+    stroke: orange;
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+}
+.svg {
+    width: 450px;
+    height: 450px;
+    @include mobile {
+        width: 200px;
+        height: 200px;
+    }
+}
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mobile {
+        gap: 10px;
+        min-width: 100%;
+    }
+    input,
+    textarea {
+        max-width: 100%;
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        border-radius: 5px;
+        @include mobile {
+            padding: 10px;
+            min-width: 350px;
+        }
+    }
+    textarea {
+        @include mobile {
+            max-height: 65px;
+
+            padding: 10px;
+        }
+    }
+}
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+        font-weight: 400;
+    }
+    span {
+        font-weight: 300;
+    }
+}
+.infoContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include mobile {
+        flex: none;
+        gap: 10px;
+    }
+    h1 {
+        font-size: 70px;
+        line-height: 88px;
+        font-weight: bolder;
+        @include mobile {
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    h2 {
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+    span {
+        font-weight: 300;
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../GlobalStyles/GlobalStyles.module.scss';
+
+.navbar {
+    height: 100px;
+}
+.container {
+    max-width: 1100px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    font-weight: 500;
+    font-size: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    @include mobile {
+        display: none;
+    }
+}
+.mobileTitle {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}
+.navigate {
+    flex: 1;
+    @include mobile {
+        display: none;
+    }
+}
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 20px;
+}
+.list-item {
+    cursor: pointer;
+}
