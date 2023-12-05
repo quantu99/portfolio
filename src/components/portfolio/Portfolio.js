@@ -2,12 +2,17 @@ import styles from './Portfolio.module.scss';
 import classNames from 'classnames/bind';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import img1 from '../../image/p5.PNG';
+import img2 from '../../image/p7.PNG';
+import img3 from '../../image/p8.PNG';
+import img4 from '../../image/p11.PNG';
+import img5 from '../../image/p12.PNG';
 const cx = classNames.bind(styles);
 const items = [
     {
         id: 1,
         title: 'Portfolio',
-        img: '/p5.png',
+        img: img1,
         desc: 'This is my porfolio, that introduces myself clearly, includes my projects. This website is impressive with awesome animations. See demo to learn more. ',
         fe: ['ReactJs', 'JavaScript', 'Sass'],
         be: [],
@@ -17,7 +22,7 @@ const items = [
     {
         id: 2,
         title: "Men's Era",
-        img: '/p7.png',
+        img: img2,
         desc: "This is an ecommerce website. I built it that serve for selling men's shoes. Its all was designed by myself. See demo to learn more.",
         fe: ['ReactJs', 'JavaScript', 'Sass'],
         be: ['NodeJs/ExpressJs', 'MongoDB'],
@@ -27,7 +32,7 @@ const items = [
     {
         id: 3,
         title: 'Pauly Blog',
-        img: '/p8.png',
+        img: img3,
         desc: 'This is a blog website.It was built to post blog about everything, like: Life, style, coding,... See demo to learn more.',
         fe: ['NextJs', 'ReactJs', 'JavaScript', 'Module css'],
         be: ['NodeJs/ExpressJs', 'MongoDB', 'Google Firebase'],
@@ -37,7 +42,7 @@ const items = [
     {
         id: 4,
         title: "Dreamer's chat",
-        img: '/p11.png',
+        img: img4,
         desc: "This is a small chat app.We can find others's username and chat with them...It's result that i get started with Google Firebase. See demo to learn more.",
         fe: ['ReactJs', 'JavaScript', 'Sass'],
         be: ['Google Firebase'],
@@ -47,7 +52,7 @@ const items = [
     {
         id: 5,
         title: 'Travel UI',
-        img: '/p12.png',
+        img: img5,
         desc: 'This is a small website that i get started with ReactJs. It introduced about some travel places at my hometown that is Can Tho City. See demo to learn more.',
         fe: ['ReactJs', 'JavaScript', 'Sass'],
         be: [],
