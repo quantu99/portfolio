@@ -95,7 +95,7 @@ function Hero() {
                     className={cx('imageContainer')}
                 >
                     <div className={cx('content')}>
-                        <img alt="logo" src="/logo.jfif" className={cx('image')} />
+                        <img alt="logo" src="/avatar.jpg" className={cx('image')} />
                         <div className={cx('info')}>
                             <h2>Pauly Dev</h2>
                             <span>Web Developer</span>
